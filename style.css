@@ -1,0 +1,53 @@
+body {
+    background: black;
+    align-items: center;
+    justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#calculator {
+    width: 35%;
+    height: 40%;
+    /* filter: blur(5px); */
+    background: rgba(255, 252, 252, 0);
+    backdrop-filter: blur(5px);
+}
+
+input {
+    width: 39%;
+    background-color: transparent;
+}
+
+#clear,
+#division,
+#multiplication,
+#subtraction,
+#seven,
+#eight,
+#nine,
+#four,
+#five,
+#six,
+#one,
+#two,
+#three {
+    width: 8%;
+    margin: 0.8%;
+}
+
+#Addition,
+#equal {
+    width: 8%;
+    height: 20%;
+    margin: 0.8%;
+}
+
+#zero {
+    width: 29%;
+    margin: 0.8%;
+}
