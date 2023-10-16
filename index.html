@@ -6,28 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
-    <div id="calculator">
-        <input type="number" id="calculations"><br>
+    <div class="calculator">
+        <input type="number" id="display">
         <button id="clear">C</button>
-        <button id="division">/</button>
-        <button id="multiplication">*</button>
-        <button id="subtraction">-</button><br>
-        <button id="seven">7</button>
-        <button id="eight">8</button>
-        <button id="nine">9</button>
-        <button id="Addition" style="height: 20%;">+</button><br>
-        <button id="four">4</button>
-        <button id="five">5</button>
-        <button id="six">6</button><br>
-        <!-- <button id="Addition" colspan="2">=</button><br> -->
-        <button id="one">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        <button id="equal" aria-colspan="2">=</button><br>
+        <button id="delete">CE</button>
+        <button onclick="appendChar('/')">/</button>
+        <button onclick="appendChar('*')">*</button>
+
+        <button onclick="appendChar('7')">7</button>
+        <button onclick="appendChar('8')">8</button>
+        <button onclick="appendChar('9')">9</button>
+        <button onclick="appendChar('-')">-</button>
+
+        <button onclick="appendChar('4')">4</button>
+        <button onclick="appendChar('5')">5</button>
+        <button onclick="appendChar('6')">6</button>
+        <button onclick="appendChar('+')">+</button>
+
+
+        <button onclick="appendChar('1')">1</button>
+        <button onclick="appendChar('2')">2</button>
+        <button onclick="appendChar('3')">3</button>
+        <button id="equal" aria-colspan="2">=</button>
+
         <button id="zero">0</button>
+        <button onclick="appendChar('.')">.</button>
+
+
+        <!-- <button id="Addition" colspan="2">=</button><br> -->
+
+
     </div>
 </body>
 
