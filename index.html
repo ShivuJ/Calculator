@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
+
     <div class="calculator">
-        <input type="number" id="display">
-        <button id="clear">C</button>
-        <button id="delete">CE</button>
+        <input type="text" id="display" disabled>
+        <button id="clear" onclick="clearChar()">C</button>
+        <button id="delete" onclick="deleteChar()">CE</button>
         <button onclick="appendChar('/')">/</button>
         <button onclick="appendChar('*')">*</button>
 
@@ -31,16 +31,12 @@
         <button onclick="appendChar('1')">1</button>
         <button onclick="appendChar('2')">2</button>
         <button onclick="appendChar('3')">3</button>
-        <button id="equal" aria-colspan="2">=</button>
+        <button id="equal" onclick="calculate()">=</button>
 
         <button id="zero">0</button>
         <button onclick="appendChar('.')">.</button>
-
-
-        <!-- <button id="Addition" colspan="2">=</button><br> -->
-
-
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
